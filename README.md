@@ -10,6 +10,15 @@ A Simple Query Filter Builder for Laravel Eloquent Models
 
 This command will generate a Filter class in app/Http/Filter directory.
 
+PS: You can use 1 filter for which models you want.
+
+For example:
+
+If you have status column on User model and Transaction model,
+you can use the Status filter for both User and Transaction models.
+
+Filters are working with column names not with models itself! Feel free to use them!
+
 ##### Usage:
 
 ```
@@ -47,7 +56,9 @@ There is only one available method:
 returns Laravel QueryBuilder so you can chain all Eloquent methods
 
 ##### Customizing Filters:
-Filters are automatically sets column name and query name from its name.
+Filters are automatically sets column name and query name from its name so you don't have to write any code after creating Filter Object! Yay!
+
+If you want to customize the filter's column name or query parameter you can check below:
 
 ###### To change filtered column name on some Filter just add to your custom filter:
 
