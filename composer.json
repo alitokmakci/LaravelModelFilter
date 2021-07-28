@@ -1,0 +1,34 @@
+{
+    "name": "alitokmakci/model-filter",
+    "description": "A Simple Query Filter For Eloquent Models",
+    "license": "MIT",
+    "type": "library",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Ali Tokmakcı",
+            "email": "alitokmakci@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ModelFilter\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ModelFilter\\Providers\\ModelFilterServiceProvider"
+            ],
+            "aliases": {
+                "ModelFilter": "ModelFilter\\Facades\\ModelFilter"
+            }
+        }
+    }
+}

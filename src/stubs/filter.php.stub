@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Filters;
+
+use ModelFilter\Filter;
+
+class DummyClass extends Filter
+{
+    protected function applyFilter($builder)
+    {
+        // You can change the query builder whatever you want
+        return parent::applyFilter($builder);
+    }
+}
