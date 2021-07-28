@@ -2,11 +2,11 @@ A Simple Query Filter Builder for Laravel Eloquent Models
 
 ##### Install:
 
-`composer require alitokmakci/model-filter`
+```composer require alitokmakci/model-filter```
 
 ##### Creating Filters:
 
-`php artisan make:filter {queryName}`
+```php artisan make:filter {queryName}```
 
 This command will generate a Filter class in app/Http/Filter directory.
 
