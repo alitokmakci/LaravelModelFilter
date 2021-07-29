@@ -51,7 +51,7 @@ Executed SQL: ```"select * from `users` where `email` = ?"```
 ###### 2
 Url: `/users?email=example@example.com&status=1`
 
-Executed SQL: ```"select * from `users` where `email` = ? and `name` = ?"```
+Executed SQL: ```"select * from `users` where `email` = ? and `status` = ?"```
 
 ##### Methods:
 There is only one available method:
