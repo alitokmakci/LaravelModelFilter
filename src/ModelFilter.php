@@ -12,11 +12,11 @@ class ModelFilter
     public static function filter(mixed $model, array $filters)
     {
         if (is_string($model)) {
-            $query = $model::query();
+            $model = $model::query();
         }    
 
         return app(Pipeline::class)
-            ->send($query)
+            ->send($model)
             ->through($filters)
             ->thenReturn();
     }
