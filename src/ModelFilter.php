@@ -9,9 +9,11 @@ use Illuminate\Pipeline\Pipeline;
 
 class ModelFilter
 {
-    public static function filter(string $model, array $filters)
+    public static function filter(mixed $model, array $filters)
     {
-        $query = $model::query();
+        if (is_string($model)) {
+            $query = $model::query();
+        }    
 
         return app(Pipeline::class)
             ->send($query)
